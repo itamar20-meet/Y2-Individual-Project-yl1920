@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title> the Hero Wiki</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<script type="text/javascript" src="../static/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-func.js"></script>
+	<style>
+         table, th, td {
+            padding-right:42px;
+            padding-left:21px;
+            line-height:20px;
+		}
+		#d{
+			padding-top:42px;
+		}
+      </style>
+</head>
+<body>
+<!-- Shell -->
+<div id="shell">
+	<!-- Header -->
+	<div id="header">
+		<h1 id="logo">The Hero Wikipedia</a></h1>
+		<div class="social">
+			<span>FOLLOW US ON:</span>
+			<ul>
+			    <li><a class="twitter" href="#">twitter</a></li>
+			    <li><a class="facebook" href="#">facebook</a></li>
+			</ul>
+		</div>
+		
+		<!-- Navigation -->
+		<div id="navigation">
+			<ul>
+			    <li><a href="{{url_for('home_page')}}">HOME</a></li>
+			    <li><a href="{{url_for('signup_page')}}">SIGN UP & LOGIN</a></li>
+			</ul>
+		</div>
+		<!-- end Navigation -->
+		
+		<!-- Sub-menu -->
+		<div id="sub-navigation">
+			<ul>
+			</ul>
+			<div id="search">
+				<form action="home_submit" method="get" accept-charset="utf-8">
+					<label for="search-field">SEARCH</label>					
+					<input type="text" name="search field" value="Enter search here" id="search-field" title="Enter search here" class="blink search-field"  />
+					<input type="submit" value="GO!" class="search-button" />
+				</form>
+			</div>
+		</div>
+		<!-- end Sub-Menu -->
+		
+	</div>
+	<!-- end Header -->
+	
+	<!-- Main -->
+	<div id="main">
+		<!-- Content -->
+		<div id="content">
+		<table>
+         <tr>
+            <th><img src="static/css/images/ironman.png" alt="hero"></th>
+            <th id="d">
+    				<p>Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963), and received his own title in Iron Man #1 (May 1968).
+
+					A wealthy American business magnate, playboy, and ingenious scientist, Anthony Edward "Tony" Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man. Although at first concealing his true identity, Stark eventually declared that he was, in fact, Iron Man in a public announcement.
+
+					Initially, Iron Man was a vehicle for Stan Lee to explore Cold War themes, particularly the role of American technology and industry in the fight against communism. Subsequent re-imaginings of Iron Man have transitioned from Cold War motifs to contemporary matters of the time.</p>
+    				<br>
+					
+ 					
+ 			</th>
+ 			<th><form action = "/ironman" method = "POST">
+ 			<input type="radio" name="ironman" value="ironman">
+ 			<input type="submit" name="submit" placeholder="submit"></form></th></th>
+         </tr>
+      	</table>  
+  </div>
+</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
+

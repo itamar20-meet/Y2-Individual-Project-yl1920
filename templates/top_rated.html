@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title> The Top Rated</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<script type="text/javascript" src="../static/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-func.js"></script>
+</head>
+<body>
+
+	<div id="shell">
+	<!-- Header -->
+	<div id="header">
+		<h1 id="logo">The Hero Wikipedia</a></h1>
+		<div class="social">
+			<span>FOLLOW US ON:</span>
+			<ul>
+			    <li><a class="twitter" href="#">twitter</a></li>
+			    <li><a class="facebook" href="#">facebook</a></li>
+			</ul>
+		</div>
+		
+		<!-- Navigation -->
+		<div id="navigation">
+			<ul>
+			    <li><a href="{{url_for('home_page')}}">HOME</a></li>
+			    <li><a href="{{url_for('vote_page')}}">VOTE</a></li>
+			    <li><a href="{{url_for('signup_page')}}">SIGN UP & LOGIN</a></li>
+			</ul>
+		</div>
+		<!-- end Navigation -->
+		
+		<!-- Sub-menu -->
+		<div id="sub-navigation">
+			<ul>
+			    <li><a href="{{url_for('top_rated_page')}}">TOP RATED</a></li>
+			</ul>
+			<div id="search">
+				<form action="home_submit" method="get" accept-charset="utf-8">
+					<label for="search-field">SEARCH</label>					
+					<input type="text" name="search field" value="Enter search here" id="search-field" title="Enter search here" class="blink search-field"  />
+					<input type="submit" value="GO!" class="search-button" />
+				</form>
+			</div>
+		</div>
+		<!-- end Sub-Menu -->
+		
+	</div>
+	<!-- end Header -->
+	<!-- Box -->
+			<div class="box">
+				<div class="head">
+					<h2>TOP RATED</h2>
+				</div>
+
+				<!-- hero -->
+				<div class="hero">
+					<div class="hero-image">
+						<a href="#"><span class="play"><span class="name">SUPERMAN</span></span><img src="static/css/images/Superman.png" alt="hero" /></a>
+					</div>	
+					<div>
+						<span class="comments">1</span>
+					</div>
+				</div>
+				<!-- end hero -->
+				
+				<!-- hero -->
+				<div class="hero">
+					<div class="hero-image">
+						<a href="#"><span class="play"><span class="name">BATMAN</span></span><img src="static/css/images/batman.png" alt="hero" /></a>
+					</div>
+					<div>
+						<span class="comments">1</span>
+					</div>
+				</div>
+				<!-- end hero -->
+				
+				<!-- hero -->
+				<div class="hero">
+					<div class="hero-image">
+						<a href="#"><span class="play"><span class="name">ALL MIGHT</span></span><img src="static/css/images/allmight.png" alt="hero" /></a>	
+						<p>name : all might </p>
+					</div>	
+					<div>
+						<span class="comments">1</span>
+					</div>
+				</div>
+				<!-- end hero -->
+				
+				<!-- hero -->
+				<div class="hero">
+					<div class="hero-image">
+						<a href="#"><span class="play"><span class="name">SPIDERMAN</span></span><img src="static/css/images/spiderman.png" alt="hero" /></a>
+					</div>
+					<div>
+						<span class="comments">1</span>
+					</div>
+				</div>
+				<!-- end hero -->
+				
+				<!-- hero -->
+				<div class="hero">
+					<div class="hero-image">
+						<a href="#"><span class="play"><span class="name">WOLVERINE</span></span><img src="static/css/images/wolverine.png" alt="hero" /></a>
+					</div>
+					<div>
+						<span class="comments">1</span>
+					</div>
+				</div>
+				<!-- end hero -->
+			<!-- end Box -->
+		</div>
+			
+			
+
+</body>
+</html>

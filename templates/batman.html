@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title> the Hero Wiki</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<script type="text/javascript" src="../static/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../static/js/jquery-func.js"></script>
+	<style>
+         table, th, td {
+            padding-right:42px;
+            padding-left:63px;
+            line-height:20px;
+		}
+		#d{
+			padding-top:42px;
+		}
+      </style>
+</head>
+<body>
+<!-- Shell -->
+<div id="shell">
+	<!-- Header -->
+	<div id="header">
+		<h1 id="logo">The Hero Wikipedia</a></h1>
+		<div class="social">
+			<span>FOLLOW US ON:</span>
+			<ul>
+			    <li><a class="twitter" href="#">twitter</a></li>
+			    <li><a class="facebook" href="#">facebook</a></li>
+			</ul>
+		</div>
+		
+		<!-- Navigation -->
+		<div id="navigation">
+			<ul>
+			    <li><a href="{{url_for('home_page')}}">HOME</a></li>
+			    <li><a href="{{url_for('signup_page')}}">SIGN UP & LOGIN</a></li>
+			</ul>
+		</div>
+		<!-- end Navigation -->
+		
+		<!-- Sub-menu -->
+		<div id="sub-navigation">
+			<ul>
+			</ul>
+			<div id="search">
+				<form action="home_submit" method="get" accept-charset="utf-8">
+					<label for="search-field">SEARCH</label>					
+					<input type="text" name="search field" value="Enter search here" id="search-field" title="Enter search here" class="blink search-field"  />
+					<input type="submit" value="GO!" class="search-button" />
+				</form>
+			</div>
+		</div>
+		<!-- end Sub-Menu -->
+		
+	</div>
+	<!-- end Header -->
+	
+	<!-- Main -->
+	<div id="main">
+		<!-- Content -->
+		<div id="content">
+		<table>
+         <tr>
+            <th><img src="static/css/images/batman.png" alt="hero"></th>
+            <th id="d">
+    				<p>Batman has been Gotham's protector for decades, CEO of Wayne Enterprises, Patriarch of the Bat Family and veteran member of the Justice League. Batman is a superhero co-created by artist Bob Kane and writer Bill Finger and published by DC Comics. The character made his first appearance in Detective Comics #27 (May, 1939). Batman is the secret identity of Bruce Wayne. Witnessing the murder of his parents as a child leads him to train himself to physical and intellectual perfection and don a bat-themed costume in order to fight crime. Batman operates in Gotham City, assisted by various supporting characters including his sidekick Robin and his butler Alfred Pennyworth, and fights an assortment of villains influenced by the characters' roots in film and pulp magazines. Unlike most superheroes, he does not possess any superpowers; he makes use (to the best that he can) of intellect, detective skills, science and technology, wealth, physical prowess, and intimidation in his war on crime.</p>
+    				<br>
+					
+ 					
+ 			</th>
+ 			<th><form action = "/batman" method = "POST">
+ 			<input type="radio" name="batman" value="batman">
+ 			<input type="submit" name="submit" placeholder="submit"></form></th></th>
+         </tr>
+      	</table>  
+  </div>
+</div>
+
+
+		
+
+
+
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
