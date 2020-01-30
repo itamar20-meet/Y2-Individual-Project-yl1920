@@ -48,7 +48,7 @@ def spiderman_page():
 @app.route("/ironman", methods= ['GET', 'POST'])
 def ironman_page():
 	if request.method == "POST":
-		if request.form['ironman']=="ironman":
+		if request.form['ironman']=="Ironman":
 			Ironman.votes += 1
 		return render_template('home.html')
 	return render_template("ironman.html")	
